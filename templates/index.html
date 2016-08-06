@@ -1,0 +1,14 @@
+<form action="{% url 'save' %}" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<p>Name</p>
+<input name="name" type="text" />
+</br>
+<p>Email</p>
+<input name="email" type="text" />
+</br>
+<p>Resume</p>
+<input name="resume" type="file" />
+</br>
+</br>
+<input type="submit" value="Submit" />
+</form>
